@@ -1,0 +1,8 @@
+.add-question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   /* Adjust this to fit your layout */
+margin: 90px 0;
+  }
