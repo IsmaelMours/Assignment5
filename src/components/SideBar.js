@@ -7,7 +7,7 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 
 
 
-const SideBar = ({text, children, addedQ }) => {
+const SideBar = ({text, children}) => {
     const { collapseSidebar } = useProSidebar();
 
     const linkStyle = {
@@ -45,11 +45,11 @@ const SideBar = ({text, children, addedQ }) => {
           </Menu>
         </Sidebar>
         <main>
-          <h1 style={{ color: "Black", marginLeft: "30rem" }}>
+          <h1 style={{ color: "Black", marginLeft: "10rem" }}>
             <div className="test">
               {text}  
               {children}
-              {addedQ}          
+                   
             </div>
           </h1>
         </main>

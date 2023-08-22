@@ -1,24 +1,12 @@
 {
   "questions": [
     {
-      "questionText": "hello what you name",
+      "questionText": "How are you are today my baby?",
       "id": 1
     },
     {
-      "questionText": "how old is Thabang",
+      "questionText": "how old are you?",
       "id": 2
-    },
-    {
-      "questionText": "how will I add you?",
-      "id": 3
-    },
-    {
-      "questionText": "",
-      "id": 4
-    },
-    {
-      "questionText": "jj",
-      "id": 5
     }
   ]
 }
