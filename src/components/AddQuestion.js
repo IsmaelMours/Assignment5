@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Button, Input, Box } from '@mui/material';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
-import './AddQuestionStyles.css';
+
+import { Link } from 'react-router-dom';
 
 const AddQuestion = () => {
   const [question, setQuestion] = useState('');
@@ -43,7 +44,7 @@ const AddQuestion = () => {
         variant="contained"
         color="primary"
         startIcon={<AddCircleOutlineIcon />}
-        onClick={handleAddQuestion}
+        onClick={handleAddQuestion} component={Link} to="/add"
       >
         Add
       </Button>

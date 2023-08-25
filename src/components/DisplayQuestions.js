@@ -29,43 +29,46 @@ const DisplayQuestions = ({ questions, onDeleteQuestion, onUpdateQuestion }) => 
 
   return (
     <div>
-      <h3>List of Questions:</h3>
-      <List>
-        {questions.map((question, index) => (
-          <ListItem key={index} className="question-item"> {/* Apply the question-item class */}
-            {editingIndex === index ? (
-              <>
-                <TextField
-                  fullWidth
-                  value={editedQuestion}
-                  onChange={handleEditChange}
-                />
-                <IconButton color="primary" onClick={() => handleEditSave(index)}>
-                  Update
+    <h3>List of Questions:</h3>
+    <List>
+      {questions.map((question, index) => (
+        <ListItem key={index} className="question-item">
+          {editingIndex === index ? (
+            <>
+              <TextField
+                fullWidth
+                value={editedQuestion}
+                onChange={handleEditChange}
+              />
+              <IconButton color="primary" onClick={() => handleEditSave(index)}>
+                Update
+              </IconButton>
+              <IconButton color="secondary" onClick={cancelEditing}>
+                Cancel
+              </IconButton>
+            </>
+          ) : (
+            <>
+              <ListItemText
+                primary={question.questionText}
+                style={{ width: "80%" }} // Adjust the width of the question text
+              />
+              <ListItemIcon>
+                <IconButton color="primary" onClick={() => startEditing(index, question.questionText)}>
+                  <EditIcon />
                 </IconButton>
-                <IconButton color="secondary" onClick={cancelEditing}>
-                  Cancel
+              </ListItemIcon>
+              <ListItemIcon>
+                <IconButton color="secondary" onClick={() => onDeleteQuestion(index)}>
+                  <DeleteIcon />
                 </IconButton>
-              </>
-            ) : (
-              <>
-                <ListItemText primary={question.questionText} />
-                <ListItemIcon>
-                  <IconButton color="primary" onClick={() => startEditing(index, question.questionText)}>
-                    <EditIcon />
-                  </IconButton>
-                </ListItemIcon>
-                <ListItemIcon>
-                  <IconButton color="secondary" onClick={() => onDeleteQuestion(index)}>
-                    <DeleteIcon />
-                  </IconButton>
-                </ListItemIcon>
-              </>
-            )}
-          </ListItem>
-        ))}
-      </List>
-    </div>
+              </ListItemIcon>
+            </>
+          )}
+        </ListItem>
+      ))}
+    </List>
+  </div>
   );
 };
 

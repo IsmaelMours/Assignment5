@@ -14,7 +14,7 @@ const Add = () => {
     <div>
       <SideBar text="Creating a Questionnaire">
         <AddQuestion onQuestionAdd={handleQuestionAdd} />
-        <QuestionList /> {/* Display list of questions */}
+        <QuestionList />
       </SideBar>
     </div>
   );

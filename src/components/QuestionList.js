@@ -14,6 +14,7 @@ const QuestionList = () => {
         console.error('Error fetching questions:', error);
       });
   }, []);
+  console.log(questions)
 
   const handleDeleteQuestion = async (index) => {
     const questionToDelete = questions[index];

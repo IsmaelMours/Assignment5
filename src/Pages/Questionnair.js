@@ -1,12 +1,13 @@
 import React from 'react'
 import SideBar from '../components/SideBar.js'
-import UpdatedQuestion from '../components/UpdatedQuestion.js'
+import ListQuiz from '../components/ListQuiz.js'
+
 
 const Questionnair = ({questions}) => {
   return (
     <div>
         <SideBar text = "Questionnaire">
-        <UpdatedQuestion questions={questions} />
+      <ListQuiz questions={questions}/>
         </SideBar>
     </div>
   )

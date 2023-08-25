@@ -1,12 +1,22 @@
 {
   "questions": [
     {
-      "questionText": "How are you are today my baby?",
-      "id": 1
-    },
-    {
       "questionText": "how old are you?",
       "id": 2
+    },
+    {
+      "questionText": "hell yah, i love it do you",
+      "id": 4
+    },
+    {
+      "questionText": "Japan can be USA anytime when they play",
+      "id": 5
     }
-  ]
+  ],
+  "responseCounts": {
+    "agree": 30,
+    "neutral": 17,
+    "disagree": 18,
+    "totalQuestions": 56
+  }
 }
