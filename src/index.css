@@ -28,8 +28,9 @@
 .response-counts{
   
   display: grid;
-  grid-template-columns: repeat(3, 2fr);
+  grid-template-columns: 1fr;
   padding: 100px 10px; 
+  flex-wrap: wrap;
 
   
 }
@@ -64,6 +65,11 @@ margin: 90px 0;
 }
 .header{
   text-align: center;
+}
+.response-questions{
+
+  background-color: aqua;
+  box-shadow: rgba(0, 0, 0, 0.2);
 }
 
 

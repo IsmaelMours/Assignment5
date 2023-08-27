@@ -72,7 +72,7 @@ const ResponseCounts = () => {
           </PieChart>
         </ResponsiveContainer>
       </div>
-      <div className="response-item">
+      <div className="response-questions">
         <p className="response-name">Number of Questions</p>
         <p className="count">{responseCounts.totalQuestions}</p>
       </div>
